@@ -48,7 +48,7 @@ let received_messages: string[] = []
 let device_id = 0
 radio.setGroup(1)
 radio.setTransmitPower(7)
-device_id = 4
+device_id = 1
 received_messages = []
 basic.forever(function () {
     Send_message("t", input.temperature())
