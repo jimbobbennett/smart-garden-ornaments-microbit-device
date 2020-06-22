@@ -30,8 +30,9 @@ radio.onReceivedString(function (receivedString) {
             basic.showIcon(IconNames.Yes)
             received_messages.push("" + received_message_device_id + ":" + input.runningTime())
             radio.sendString(receivedString)
+        } else {
+            basic.showIcon(IconNames.No)
         }
-        basic.showIcon(IconNames.No)
     } else {
         basic.showIcon(IconNames.No)
     }
