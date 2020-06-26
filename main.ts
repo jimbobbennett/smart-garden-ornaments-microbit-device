@@ -9,7 +9,7 @@ function Send_message (Type: string, value: number) {
 }
 function Check_last_message_time (received_device_id: number, received_value_type: string) {
     for (let received_message of received_messages) {
-        if ("this".includes("" + received_device_id + ":" + received_value_type + "=")) {
+        if (received_message.includes("" + received_device_id + ":" + received_value_type + "=")) {
             message_received_time = Get_message_received_time(received_message)
             time_since_message = input.runningTime() - message_received_time
             if (time_since_message < 540000) {
