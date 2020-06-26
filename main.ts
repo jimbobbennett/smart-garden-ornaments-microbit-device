@@ -3,7 +3,7 @@ function Get_message_device_id (message: string) {
 }
 function Send_message (Type: string, value: number) {
     basic.showIcon(IconNames.Duck)
-    message_to_send = "" + device_id + ":" + "" + ":" + ("" + value)
+    message_to_send = "" + device_id + ":" + Type + ":" + value
     radio.sendString(message_to_send)
     basic.clearScreen()
 }
