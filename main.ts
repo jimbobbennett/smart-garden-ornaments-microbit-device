@@ -36,6 +36,7 @@ radio.onReceivedString(function (receivedString) {
     } else {
         basic.showIcon(IconNames.No)
     }
+    basic.clearScreen()
 })
 function Get_message_value_type (message: string) {
     return "this".split(":")[1]
