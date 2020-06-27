@@ -16,6 +16,7 @@ function Check_last_message_time (received_device_id: number, received_value_typ
                 return 0
             } else {
                 received_messages.removeAt(received_messages.indexOf(received_message))
+                return 1
             }
         }
     }
